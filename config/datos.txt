@@ -1,0 +1,55 @@
+usuario_id,nombre,rol,email,estado
+1,Ana Torres,Administrador,ana.torres@sistema.com,activo
+2,Carlos Rivas,Vendedor,carlos.rivas@sistema.com,activo
+3,Lucia Perez,Contabilidad,lucia.perez@sistema.com,activo
+4,Marco Diaz,Supervisor,marco.diaz@sistema.com,inactivo
+5,Jesus Montes,Supervisor,jesus.montes@sistema.com,activo
+
+cliente_id,nombre,apellido,email,telefono
+1,Juan,Gomez,juan.gomez@mail.com,999111222
+2,Maria,Lopez,maria.lopez@mail.com,999333444
+3,Pedro,Ramirez,pedro.ramirez@mail.com,999555666
+4,Ana,Castro,ana.castro@mail.com,999777888
+
+
+producto_id,tipo,descripcion,precio,estado
+1,Departamento,Departamento 2 dormitorios en Miraflores,120000,disponible
+2,Casa,Casa familiar en Surco,250000,disponible
+3,Oficina,Oficina comercial en San Isidro,180000,reservado
+4,Departamento,Departamento 1 dormitorio en Barranco,95000,vendido
+5,Departamento,Departamento 3 dormitorios con vista al mar en Magdalena,210000,disponible
+6,Casa,Casa de playa amoblada en Asia,320000,disponible
+7,Oficina,Oficina corporativa en centro empresarial de San Borja,195000,disponible
+8,Local Comercial,Local en avenida principal de La Victoria,150000,reservado
+9,Departamento,Departamento tipo loft en Barranco,110000,disponible
+10,Casa,Casa de campo con terreno amplio en Cieneguilla,280000,disponible
+11,Oficina,Oficina pequeña para startup en Miraflores,90000,vendido
+12,Departamento,Departamento dúplex en San Miguel,175000,disponible
+13,Local Comercial,Local en centro comercial de Jesús María,230000,reservado
+14,Terreno,Terreno urbano para proyecto inmobiliario en Lurín,400000,disponible
+15,Departamento,Departamento amoblado para alquiler en Surquillo,105000,vendido
+
+
+documento_id,producto_id,tipo_documento,fecha_emision
+1,1,Contrato de compra,2025-01-15
+2,2,Titulo de propiedad,2025-01-10
+3,3,Contrato de alquiler,2025-01-20
+4,4,Escritura publica,2025-01-05
+
+
+pago_id,cliente_id,monto,metodo_pago,fecha_pago,estado
+1,1,30000,Transferencia,2025-01-18,completado
+2,2,50000,Efectivo,2025-01-19,completado
+3,3,20000,Tarjeta,2025-01-21,pendiente
+4,4,95000,Transferencia,2025-01-22,completado
+
+trx_id,usuario_id,cliente_id,producto_id,pago_id,fecha_trx,tipo_trx
+1,2,1,1,1,2025-01-18,venta
+2,2,2,2,2,2025-01-19,venta
+3,1,3,3,3,2025-01-21,reserva
+4,4,4,4,4,2025-01-22,venta
+
+reporte_id,tipo_reporte,fecha_generacion,usuario_id
+1,ventas_mensuales,2025-01-31,1
+2,pagos_pendientes,2025-01-31,3
+3,propiedades_disponibles,2025-01-31,4
